@@ -1,8 +1,9 @@
 {
   "name": "fetch-git-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "fetch user's local or global .gitconfig",
   "main": "index.js",
+  "files": ["index.js"],
   "scripts": {
     "test": "mocha"
   },

@@ -17,10 +17,14 @@ describe('fetch git config test suite', () => {
     })
   })
 
-  it('fech git config', () => {
+  it('fetch git config', () => {
     return fetch({ cwd: 'F:/github/jquery.async', path: '.git/config' }).then((data) => {
       assert.equal(data['remote "origin"'].url, 'git@github.com:huang-x-h/jquery.async.git')
     })
   })
 
+  it('fetch git config sync', () => {
+    let data = fetch.sync()
+    assert.equal(data['remote "origin"'].url, 'git@github.com:huang-x-h/fetch-git-config.git')
+  })
 })
