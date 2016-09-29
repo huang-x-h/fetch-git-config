@@ -1,11 +1,14 @@
 {
   "name": "fetch-git-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "fetch user's local or global .gitconfig",
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "doc": "jsdoc -c jsdoc-conf.json"
   },
   "keywords": [
     "fetch",
@@ -14,10 +17,15 @@
   ],
   "author": "huang.xinghui <huang.x.hui@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:huang-x-h/fetch-git-config.git"
+  },
   "dependencies": {
     "ini": "^1.3.4"
   },
   "devDependencies": {
+    "jsdoc": "^3.4.1",
     "mocha": "^3.1.0"
   }
 }
